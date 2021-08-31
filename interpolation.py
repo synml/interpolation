@@ -38,7 +38,7 @@ print('보간 결과를 img 폴더에 저장했습니다.')
 
 # 보간 처리 시간 저장
 with open('처리 시간.txt', mode='w', encoding='utf-8') as f:
-    f.write('최근접 이웃 보간법, 양선형 보간법, 3차원 회선 보간법, lanczos 보간법\n')
+    f.write('최근접 이웃 보간법, 양선형 보간법, 3차원 회선 보간법, Lanczos 보간법\n')
     f.write(f'{nearest_time:.4f}ms, {bilinear_time:.4f}ms, {bicubic_time:.4f}ms, {lanczos_time:.4f}ms\n')
 print('보간 처리 시간을 csv 파일로 저장했습니다.')
 os.system('pause')
